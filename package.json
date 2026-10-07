@@ -1,0 +1,35 @@
+{
+  "name": "ledgerready-ios",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start --dev-client",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "build:ios": "eas build --platform ios --profile development",
+    "build:production": "eas build --platform ios --profile production",
+    "submit:ios": "eas submit --platform ios --profile production"
+  },
+  "dependencies": {
+    "expo": "~57.0.27",
+    "expo-crypto": "~57.0.3",
+    "expo-dev-client": "~57.0.19",
+    "expo-file-system": "~57.0.7",
+    "expo-image-picker": "~57.0.20",
+    "expo-location": "~57.0.20",
+    "expo-secure-store": "~57.0.4",
+    "expo-sharing": "~57.0.22",
+    "expo-sqlite": "~57.0.4",
+    "expo-status-bar": "~57.0.1",
+    "expo-task-manager": "~57.0.21",
+    "react": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-webview": "13.16.1"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.3",
+    "@types/react": "~19.2.0"
+  }
+}
